@@ -15,7 +15,7 @@ const options = {
 
 // for each item int the list, create an <li>
 La.map((word, index) => {
-  const placeholder = new Date(OG.getTime() + 86400000 * index);
+  const placeholder = new Date(OG.getTime() + 86400000 * (index + 1));
   const wordPair = document.createElement("div");
   wordPair.id = String(index);
   wordPair.classList.add("word-pair");

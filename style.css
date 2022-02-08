@@ -55,12 +55,16 @@ p {
 .word-pair {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  place-content: center center;
   width: 100%;
   padding: 1rem 0.5rem;
 }
 
 .word-pair p {
+  display: grid;
+  place-items: center start;
   font-size: clamp(1rem, 0.8vw, 1.2rem);
+  margin: 0;
 }
 
 .letters {
